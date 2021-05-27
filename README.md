@@ -1,11 +1,11 @@
 # javascript-training
 :books: :pencil: A repository to hone my skills in Javascript. 
-Folders:
-:memo: basic-scripts: here I train basic knowledge of the Javascript
-  :left_speech_bubble: Variables
-  :left_speech_bubble: Data types
-  :left_speech_bubble: JavaScript Interaction: alert, prompt, confirm
-  :left_speech_bubble: Type Conversions
-  :left_speech_bubble: Basic Operators (unary, binary). Math in JS
-  :left_speech_bubble: Comparison Operators
-  :left_speech_bubble: if/else, "?"
+</br> Folders:
+</br>:memo: basic-scripts: here I train basic knowledge of the Javascript
+</br>  :left_speech_bubble: Variables
+</br>  :left_speech_bubble: Data types
+</br>  :left_speech_bubble: JavaScript Interaction: alert, prompt, confirm
+</br>  :left_speech_bubble: Type Conversions
+</br>  :left_speech_bubble: Basic Operators (unary, binary). Math in JS
+</br>  :left_speech_bubble: Comparison Operators
+</br>  :left_speech_bubble: if/else, "?"
