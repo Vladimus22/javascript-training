@@ -1,2 +1,2 @@
 # javascript-training
-A repository to hone my skills in Javascript. 
+:books: :pencil: A repository to hone my skills in Javascript. 
