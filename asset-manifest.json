@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/javascript-training/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/javascript-training/static/js/main.dc595c1d.chunk.js",
+    "main.js.map": "/javascript-training/static/js/main.dc595c1d.chunk.js.map",
+    "runtime-main.js": "/javascript-training/static/js/runtime-main.1f870d72.js",
+    "runtime-main.js.map": "/javascript-training/static/js/runtime-main.1f870d72.js.map",
+    "static/js/2.c39eea37.chunk.js": "/javascript-training/static/js/2.c39eea37.chunk.js",
+    "static/js/2.c39eea37.chunk.js.map": "/javascript-training/static/js/2.c39eea37.chunk.js.map",
+    "static/js/3.7d2e3352.chunk.js": "/javascript-training/static/js/3.7d2e3352.chunk.js",
+    "static/js/3.7d2e3352.chunk.js.map": "/javascript-training/static/js/3.7d2e3352.chunk.js.map",
+    "index.html": "/javascript-training/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/javascript-training/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.c39eea37.chunk.js.LICENSE.txt": "/javascript-training/static/js/2.c39eea37.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/javascript-training/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f870d72.js",
+    "static/js/2.c39eea37.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.dc595c1d.chunk.js"
+  ]
+}
