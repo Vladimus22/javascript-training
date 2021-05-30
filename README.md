@@ -10,4 +10,4 @@
 </br>  :left_speech_bubble: Comparison Operators
 </br>  :left_speech_bubble: if/else, "?"
 </br>  :left_speech_bubble: Logical Operators: || (OR), && (AND), ! (NOT)
-
+</br>:atom_symbol: react-training-app: here I train in React
