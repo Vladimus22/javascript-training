@@ -1,9 +1,11 @@
 function main() {
-    var depth = parseInt(128, 10);
+    var inputDepth = document.getElementById('depthCount').value;
+    var depth = parseInt(inputDepth, 10);
     var currentDistance = 0;
     var climb = 7;
     var slipBack = 2;
     var dayCount = 0;
+    
     for (i = 0; i < depth; i++) {
         if (currentDistance < depth) {
             currentDistance += climb;
@@ -12,7 +14,8 @@ function main() {
             }
             dayCount++;
         } else {
-            console.log(dayCount);
+            console.log(dayCount);        
+            document.getElementById('count_days').innerHTML = String(dayCount);
             break;
         }
 

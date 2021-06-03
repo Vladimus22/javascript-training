@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <div id="txt">
 
@@ -20,15 +23,27 @@
         <input type="text" name="" id="inp_4">
     </div>
     <div class="loop">
-        <button onclick="main()">Loop!</button>
+        <div class="loop-textblock">
+            <div class="loop-title"><strong>The Snail in The Well</strong> <br /></div>
+            <div class="loop-block">
+                <p>The snail climbs up 7 feet each day and slips back 2 feet each night.
+                    This code counts how many days will it take the snail to get out of a well with the given depth?
+                    You only need to enter an arbitrary depth</p>
+                <img src="./images/snail.jpg" alt="snailonthewall">
+            </div>
+        </div>
+        <input type="text" name="depthCount" id="depthCount">
+        <button onclick="main()">Calculate!</button>
+        <p>The snail will be need <div id="count_days">0</div>days to get out from well</p>
     </div>
     <!-- <script src="./basicOperatorsMath.js"></script> -->
     <script src="./inputs.js"></script>
-   <!-- <script src="./test.js"></script> -->
+    <!-- <script src="./test.js"></script> -->
     <!-- <script src="./operatorIf.js"></script> -->
     <!-- <script src="./logicalOperators.js"></script> -->
     <!-- <script src="./ifLogicalOp.js"></script> -->
     <!-- <script src="./simpleLoginSystem.js"></script> -->
     <script src="./loopTask.js"></script>
 </body>
+
 </html>
