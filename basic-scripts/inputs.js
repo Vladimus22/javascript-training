@@ -1,4 +1,6 @@
 function addInputs() {
+    let japaneseSentence = document.getElementById('formula');
+    japaneseSentence.innerHTML = "タイプの式を計算する電卓: x<sub>1</sub> + x<sub>2</sub> + x<sub>3</sub> = x<sub>4</sub>"
     //declare inputs DOM Doc
     let input_1 = document.getElementById('inp_1').value; 
     let input_2 = document.getElementById('inp_2').value;
