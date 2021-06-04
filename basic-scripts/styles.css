@@ -1,16 +1,26 @@
 body {
-    background-color: #003249;
-}
-.inputs-description {
-    font-weight: normal;
-    font-size: 30px;
-}
-#inputs {
-    padding: 0px 30px;
-    height: 250px;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.inputs-description {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 18px;
+}
+#inputs {
+    margin-top: 36px;
+    margin-left: 43px;
+    margin-right: 43px;
+    padding: 0px 30px;
+    height: 300px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;    
     align-items: center;
     border-radius: 0px;
     background-color: #89AAE6;
@@ -18,25 +28,28 @@ body {
     font-size: 16px;
     color: #ffffff;
     font-weight: bold;
-    box-shadow: inset 0px 0px 32px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 32px 5px rgba(0, 0, 0, 0.25);
 }
 .inputs-form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 #inputs-button {
+    width: 100px;
+    height: 50px;
+    margin-top: 19px;
+    margin-bottom: 19px;
     background-color:#3685B5;
-	border-radius:2px;
+	border-radius:30px;
     border: none;	
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-    font-weight: bold;
-	font-size:16px;
-	padding:18px 32px;
+    font-size:25px;
+	padding:0;
 	text-decoration:none;	
     letter-spacing: 1px;
 }
@@ -47,14 +60,34 @@ body {
     background-color: #0471A6;
 }
 .inputs-text {
+    width: 180px;
+    height: 50px;
     padding: 18px 32px;
-    margin: 8px 10px;
+    margin-left: 22px;
     display: inline-block;
     border: none;
-    border-radius: 2px;
+    border-radius: 30px;
     box-sizing: border-box;
     font-size: 16px;
     outline: none;
+}
+#inp_1 {
+    margin-left: 0;
+}
+.inputs-form-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+.inputs-form-child-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.inputs-form-child-2 > .inputs-text {
+    margin-left: 0;
 }
 .loop {
     margin-top: 20px;

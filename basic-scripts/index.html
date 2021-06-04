@@ -16,16 +16,20 @@
     <!-- palette: #AC80A0, #89AAE6, #3685B5, #0471A6, #061826 -->
     <div id='inputs'>
         <div class="inputs-description">
-            <p>x<sub>1</sub> + x<sub>2</sub> + x<sub>3</sub> = x<sub>4</sub></p>
+            <p>Калькулятор обчислення виразу типу: x<sub>1</sub> + x<sub>2</sub> + x<sub>3</sub> = x<sub>4</sub></p>
         </div>
         <div class="inputs-form">
-            <input type="text" name="firstInput" placeholder="x1" id="inp_1" class="inputs-text"> +
-            <input type="text" name="secondInput" placeholder="x2" id="inp_2" class="inputs-text"> +
-            <input type="text" name="thirdInput" placeholder="x3" id="inp_3" class="inputs-text">
-            <!-- button to submit calculate inputs-->
-            <button onclick="addInputs()" id="inputs-button">Calculate!</button>
-            <!-- output -->
-            <input type="text" name="" placeholder="x4" id="inp_4" class="inputs-text">
+            <div class="inputs-form-child">
+                <input type="text" name="firstInput" placeholder="x1" id="inp_1" class="inputs-text">
+                <input type="text" name="secondInput" placeholder="x2" id="inp_2" class="inputs-text">
+                <input type="text" name="thirdInput" placeholder="x3" id="inp_3" class="inputs-text">
+            </div>
+            <div class="inputs-form-child-2">
+                <!-- button to submit calculate inputs-->
+                <button onclick="addInputs()" id="inputs-button">=</button>
+                <!-- output -->
+                <input type="text" name="" placeholder="x4" id="inp_4" class="inputs-text">
+            </div>
         </div>
     </div>
     <div class="loop">
