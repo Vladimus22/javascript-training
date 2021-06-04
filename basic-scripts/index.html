@@ -17,7 +17,7 @@
     <div id='inputs'>
         <div class="inputs-description">
             <p>x<sub>1</sub> + x<sub>2</sub> + x<sub>3</sub> = x<sub>4</sub></p>
-        </div>   
+        </div>
         <div class="inputs-form">
             <input type="text" name="firstInput" placeholder="x1" id="inp_1" class="inputs-text"> +
             <input type="text" name="secondInput" placeholder="x2" id="inp_2" class="inputs-text"> +
@@ -29,18 +29,26 @@
         </div>
     </div>
     <div class="loop">
-        <div class="loop-textblock">
-            <div class="loop-title"><strong>The Snail in The Well</strong> <br /></div>
-            <div class="loop-block">
+
+        <div class="loop-block">
+            <div class="loop-textblock">
+                <div class="loop-title"><strong>The Snail in The Well</strong> <br /></div>
                 <p>The snail climbs up 7 feet each day and slips back 2 feet each night.
                     This code counts how many days will it take the snail to get out of a well with the given depth?
-                    You only need to enter an arbitrary depth</p>
+                    You only need to enter an arbitrary depth
+                </p>
+                <input type="text" name="depthCount" id="depthCount" placeholder="Enter depth" class="inputs-text">
+                <button onclick="main()" id="loop-button">Calculate!</button>
+                <div class="loop-resultblock">
+                    <p>The snail will be need <span id="count_days">0</span> days to get out from well</p>
+                </div>
+            </div>
+            <div class="loop-imageblock">
                 <img src="./images/snail.jpg" alt="snailonthewall">
             </div>
         </div>
-        <input type="text" name="depthCount" id="depthCount">
-        <button onclick="main()">Calculate!</button>
-        <p>The snail will be need <div id="count_days">0</div>days to get out from well</p>
+
+
     </div>
     <!-- <script src="./basicOperatorsMath.js"></script> -->
     <script src="./inputs.js"></script>

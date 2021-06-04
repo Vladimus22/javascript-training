@@ -12,12 +12,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 2px;
+    border-radius: 0px;
     background-color: #89AAE6;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #ffffff;
     font-weight: bold;
+    box-shadow: inset 0px 0px 32px 5px rgba(0, 0, 0, 0.25);
 }
 .inputs-form {
     display: flex;
@@ -56,23 +57,82 @@ body {
     outline: none;
 }
 .loop {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;     
+    border-radius: 0px;
+    background-color: #89AAE6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 32px 5px rgba(0, 0, 0, 0.25);
 }
 .loop-textblock {
-    margin-top: 100px;
-    width: 700px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column;    
     align-items: center;
 }
 .loop-block {
+    width: 800px;
+    height: 325px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 20px;
     display: flex;
-    border-radius: 25px;
+    border-radius: 0px;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(208, 236, 131);
+    background-color: #0471A6;
+    box-shadow: 0px 0px 32px 5px rgba(0, 0, 0, 0.25);
+}
+.loop-imageblock > img {
+    border-radius: 20px;
+}
+#loop-button {
+    background-color:#003249;
+	border-radius:2px;
+    border: none;	
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+    font-weight: bold;
+	font-size:16px;
+	padding:18px 32px;
+	text-decoration:none;	
+    letter-spacing: 1px;
+}
+#loop-button:active {
+    background-color: #001620;
+}
+.loop-resultblock {
+    display: inline-block;
+}
+
+@media screen and (max-width: 1100px) {
+    .inputs-form > input[type=text]{
+        width: 25%;        
+    }
+    .loop-block {
+        width: 550px;
+    }
+    .loop-imageblock > img {
+        width: 250px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .inputs-form > input[type=text]{
+        width: 50%;        
+    }
+    .loop-block {
+        width: 550px;
+    }
+    .loop-imageblock > img {
+        width: 250px;
+    }
+    #inputs {
+        width: 350px;
+    }
 }
