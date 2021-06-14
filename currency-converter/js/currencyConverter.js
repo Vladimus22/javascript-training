@@ -84,6 +84,29 @@ function inputNine() {
     // }   
 }
 
-fetch("https://api.exchangerate-api.com/v4/latest/USD")
+// fetch("https://api.exchangerate-api.com/v4/latest/USD", {
+//     method: 'GET',
+//     headers: {
+//         'Content-Type' : 'application/json'
+//     },
+//     body: JSON.stringify({
+//         rates: 'EUR'
+//     })
+// }).then(res => {
+//     return res.json()
+// })
+//     // .then(res => res.json())
+//     // .then(res => {
+//     //     if(res.ok) {
+//     //         console.log("SUCCESS")
+//     //     } else {
+//     //         console.log("Not Successful")
+//     //     }
+//     // })
+//     .then(data => console.log(data))
+//     .catch(error => console.log("ERROR"))
+fetch("https://api.exchangerate-api.com/v4/latest/USD") //get currency from api
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => console.log(data.rates.EUR))
+    
+    
