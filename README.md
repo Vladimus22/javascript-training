@@ -12,3 +12,4 @@
 </br>  :left_speech_bubble: Logical Operators: || (OR), && (AND), ! (NOT)
 </br>  :left_speech_bubble: Loops do/while/for, continue/break 
 </br>:atom_symbol: react-training-app: here I train in React
+</br>:chart_with_downwards_trend: currency-converter: my project to create a service for getting the current exchange rate (training skills to work with API) 
