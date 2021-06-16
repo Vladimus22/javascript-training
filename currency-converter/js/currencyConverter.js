@@ -12,6 +12,9 @@ document.getElementById("seven").addEventListener("click", inputSeven);
 document.getElementById("eight").addEventListener("click", inputEight);
 document.getElementById("nine").addEventListener("click", inputNine);
 
+let rateEUR = 0;
+let finalCurrency = 0;
+
 function inputOne() {
     if (checkUnitIsActive == true) {
         firstValue.value = firstValue.value + numbers[0];
@@ -105,8 +108,14 @@ function inputNine() {
 //     // })
 //     .then(data => console.log(data))
 //     .catch(error => console.log("ERROR"))
-fetch("https://api.exchangerate-api.com/v4/latest/USD") //get currency from api
+fetch("https://api.exchangerate-api.com/v4/latest/EUR") //get currency from api
     .then(res => res.json())
-    .then(data => console.log(data.rates.EUR))
-    
+    // .then(data => console.log(data.rates.EUR))
+    .then(data => rateEUR = data.rates.USD)
+    // .then(rateEUR == data);
+
+function Converter() {
+    finalCurrency = firstValue.value * rateEUR;
+    firstValue.value = finalCurrency;
+}
     

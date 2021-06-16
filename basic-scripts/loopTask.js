@@ -6,10 +6,10 @@ function main() {
     var slipBack = 2;
     var dayCount = 0;
     
-    for (i = 0; i < depth; i++) {
+    for (i = 0; i < depth; i++) { // i 
         if (currentDistance < depth) {
             currentDistance += climb;
-            if(depth > currentDistance){
+            if(depth >= currentDistance){
                 currentDistance -= slipBack;
             }
             dayCount++;
@@ -17,8 +17,7 @@ function main() {
             console.log(dayCount);        
             document.getElementById('count_days').innerHTML = String(dayCount);
             break;
-        }
-
+        }          
     }
 }
 
