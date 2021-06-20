@@ -108,14 +108,31 @@ function inputNine() {
 //     // })
 //     .then(data => console.log(data))
 //     .catch(error => console.log("ERROR"))
-fetch("https://api.exchangerate-api.com/v4/latest/EUR") //get currency from api
-    .then(res => res.json())
-    // .then(data => console.log(data.rates.EUR))
-    .then(data => rateEUR = data.rates.USD)
-    // .then(rateEUR == data);
 
-function Converter() {
-    finalCurrency = firstValue.value * rateEUR;
-    firstValue.value = finalCurrency;
+
+// fetch("https://api.exchangerate-api.com/v4/latest/EUR") //get currency from api
+//     .then(res => res.json())
+//     // .then(data => console.log(data.rates.EUR))
+//     .then(data => rateEUR = data.rates.USD)
+//     // .then(rateEUR == data);
+fetch("https://api.exchangerate-api.com/v4/latest/EUR") //get currency from api
+        .then(res => res.json())
+        .then(data => rateEUR = data.rates.USD)
+
+function getRate() {    
+    var amount = firstValue.value;
+    var rate = rateEUR;
+    console.log('current currency EUR to USD: ' + rate);
+    convert(amount, rate);
 }
+    
+function convert(amount, rate){
+    var currency = amount * rate;
+    firstValue.value = currency;
+}
+    
+// function Converter() {
+//     finalCurrency = firstValue.value * rateEUR;
+//     firstValue.value = finalCurrency;
+// }
     
