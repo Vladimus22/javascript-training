@@ -1,15 +1,20 @@
 h1 {
     font-size: 48px;
     margin: 0 0 16px 0;
+    font-weight: bold;
+    font-family: 'Hind Siliguri', sans-serif;
 }
 h2 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 24px;
     margin: 0 0 16px 0;
 }
 header{
     display: flex;
     align-items: center;
+    background: rgb(41, 76, 98);
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 #hd {
     display: flex;
@@ -19,14 +24,14 @@ header{
 }
 .container {
     margin: 0 auto;
-    padding: 0 20px 0 20px;
+    padding: 20px 20px 0 20px;
     max-width: 900px; /* we limited the maximum width the text container can have to 900px using the max-width property. */
     margin-bottom: 30px;
 }
 .btn {
     display: inline-block;
     color: white;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 20px;
     background: #549DA0;
     border: none;
@@ -94,4 +99,7 @@ footer li a {
 }
 footer li a:hover {
     color: white;
+}
+#ftr {
+    padding: 0 20px  0 20px;
 }
