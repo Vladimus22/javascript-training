@@ -1,13 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 h1 {
     font-size: 48px;
     margin: 0 0 16px 0;
     font-weight: bold;
     font-family: 'Hind Siliguri', sans-serif;
 }
-h2 {
-    font-weight: 400;
+h2 {    
     font-size: 24px;
     margin: 0 0 16px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 header{
     display: flex;
@@ -15,6 +20,7 @@ header{
     background: rgb(41, 76, 98);
     color: white;
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 #hd {
     display: flex;
@@ -38,6 +44,8 @@ header{
     border-radius: 5px;
     padding: 12px 16px;
     cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 .btn:hover {
     background: #468486;
@@ -55,22 +63,35 @@ header{
     align-items: center;
     width: 32%;    
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 .feature img {
     width: 40%;
+}
+.quote {
+    background: rgb(87, 157, 159);
+    padding-bottom: 20px;
 }
 blockquote {
     margin: 0;
     padding: 0;
     text-align: center;
+    background: rgb(87, 157, 159);
 }
 blockquote p {
     margin: 0 0 5px 0;
     font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
 }
 blockquote cite {
     font-size: 16px;
     font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
 }
 blockquote cite:before {
     content: '-';
@@ -79,9 +100,12 @@ blockquote cite:before {
 footer {
     background: #353535;
     padding: 32px 0;
+    height: 100px;
     text-align: center;
     color: #868686;
     font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 footer ul {
     margin: 0;
@@ -102,4 +126,7 @@ footer li a:hover {
 }
 #ftr {
     padding: 0 20px  0 20px;
+}
+#qt {
+    margin-bottom: 0;
 }
