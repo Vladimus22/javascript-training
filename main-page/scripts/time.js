@@ -19,3 +19,7 @@ window.onload = setInterval(function() {
 
 }, 1000);
 
+function showMessage(message) {
+    message = 'Sorry, unfortunately I have not completed this page. Please, come back soon.';
+    return alert(message);
+}
