@@ -25,7 +25,10 @@ function setImage() {
         let image = document.getElementById('album');
         let leftArrowImage = document.getElementById('left-arrow');
         let rightArrowImage = document.getElementById('right-arrow');
-        image.src = "./images/sweet_ginger_green_album.svg";        
+        image.src = "./images/sweet_ginger_green_album.svg";  
+        leftArrowImage.style.display = "block";
+        rightArrowImage.style.display = "block";     
+        
         musicStart = false;
         getPause();
     }
@@ -38,6 +41,5 @@ function getAudio() {
     confirm('Now will playing  Pearce-Pickering Barrelhouse -\"Sweet Ginger Green\"');   
 }
 function getPause() {
-
     audio.pause();
 }
