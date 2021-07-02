@@ -28,31 +28,58 @@
             </div>
         </div>
         <!-- NEWS -->
-        <div class="news-container">
-            <div class="current-time-container" id="current-time-container">
-                Current Local Time in Vladgard: 00:00:00
-            </div>
-            <div class="welcome-container">
-                <div class="left-span">
-
+        <div class="news-main-container">
+            <div class="news-container">
+                <div class="current-time-container" id="current-time-container">
+                    Current Local Time in Vladgard: 00:00:00
                 </div>
-                <div class="welcome-title-container">
-                    <div class="first-title-container">
-                        Welcome to
+                <div class="welcome-container">
+                    <div class="left-span">
+    
                     </div>
-                    <div class="second-title-container">
-                        VLADGARD
-                    </div>
-                    <div class="third-title-container">
-                        the kingdom of sadness
-                    </div>
-                </div>                
+                    <div class="welcome-title-container">
+                        <div class="first-title-container">
+                            Welcome to
+                        </div>
+                        <div class="second-title-container">
+                            VLADGARD
+                        </div>
+                        <div class="third-title-container">
+                            the kingdom of sadness
+                        </div>
+                    </div>                
+                </div>
             </div>
-        </div>
+            <div class="music-container">
+                <div class="music-player-container">
+                    <div class="music-player-title">
+                        MUSIC
+                    </div>
+                    <div class="music-player-quote">
+                        The only thing that helps to endure another depressive day. 
+                    </div>
+                </div>
+                <div class="music-tracklist-container">
+                    <div class="left-track">
+                        <img src="./images/left_arrow.png" id="left-arrow" alt="">
+                    </div>
+                    <div class="album-image">
+                        <img src="./images/sweet_ginger_green_album.svg" id="album" alt="" onclick="toggleImage()" >
+                    </div>
+                    <div class="right-track">
+                        <img src="./images/right_arrow.png" id="right-arrow" alt="">
+                    </div>
+                </div>
+                <div class="bottom-panel">
+                    <span class="btm-line"></span>
+                </div>
+            </div>
+        </div>       
     </div>
     <div class="shadow-container">
 
     </div>
     <script src="./scripts/time.js"></script>
+    <script src="./scripts/musicPlayer.js"></script>
 </body>
 </html>
