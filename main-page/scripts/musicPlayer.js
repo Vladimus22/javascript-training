@@ -31,9 +31,9 @@ function setImage() {
         
         musicStart = false;
         getPause();
-    }
-    
+    }    
 }
+
 let audio = new Audio('./audio/sweet_ginger_green.mp3');
 function getAudio() {      
     audio.play();
@@ -43,3 +43,4 @@ function getAudio() {
 function getPause() {
     audio.pause();
 }
+

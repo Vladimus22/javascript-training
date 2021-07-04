@@ -70,8 +70,25 @@ a:active {
 a:hover {
     color: #000000;
 }
-.news-container {
-    margin-top: 75px;
+
+.duty-place-container {
+    margin-left: 76px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+}
+.duty-place-container div {
+    margin-left: 8px;
+    cursor: pointer;
+}
+.duty-place-container img {
+    cursor: pointer;
+}
+.news-container {   
     margin-bottom: 49px;
     margin-left: 76px;    
 }
@@ -129,8 +146,7 @@ a:hover {
     background: rgba(149, 195, 220, 0.3);
     backdrop-filter: blur(4px);
     border-radius: 4px;
-    margin-top: 91px;
-    
+    margin-top: 40px;    
     margin-left: 17px;    
 }
 
