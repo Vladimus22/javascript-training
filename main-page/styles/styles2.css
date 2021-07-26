@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 360px) {    
+    .container {
+        padding: 0;
+        margin: 0;
+        background: url("../images/bg1.png");
+        width: 360px;
+        height: 640px;
+    }
+}
