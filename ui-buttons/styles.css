@@ -100,53 +100,64 @@ input:checked + .slider:before {
     font-size: 14px;
 }
 
-/* Slider */
-.slideContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 75%;
-    margin-top: 20px;
-}
-
-.slider-controller {
+/* range slider - dimmer */
+/* input[type="range"] {
+    width: 400px;
+    height: 10px;
+    appearance: none;
+    background-color: rgb(218, 218, 218);
+}  
+input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none;
+    width: 30px;    
+    height: 30px;  
+    background: url("./images/radio_btn.png");    
+    background-size: 30px 30px;
+    background-position: center;
+    cursor: pointer;
+} */
+
+.wrap {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .range {
     width: 100%;
-    height: 15px;
-    background: linear-gradient( 90deg, rgb(1, 141, 59) 60%, rgb(224, 224, 224) 60%);
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: 0.2s;
-    transition: opacity 0.2s;
-    border-radius: 12px;    
-}
-#value {
-    font-family: sans-serif;
-    font-size: 25px;
-    color: rgb(31, 31, 31);
-    margin-left: 20px;
-}
-.slider-controller::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
+    cursor: pointer;
+    opacity: 0;
+  }
+  .range::-ms-tooltip {
+    display: none;
+  }
+  
+  .track {
+    width: 100%;
+    height: 7px;
+    background: #DDDDDD;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  .track-inner {
+    width: 0;
+    height: 100%;
+    background: rgb(3, 182, 82);
+  }
+  
+  .thumb {
     width: 40px;
     height: 40px;
     background: url("./images/radio_btn.png");
     background-size: 40px 40px;
-    /* background: rgb(255, 255, 255);     */
     border-radius: 50%;
-    cursor: pointer;
-}
-
-.slider-controller::-moz-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 40px;
-    height: 40px;
-    background: url("./images/radio_btn.png");
-    background-size: 40px 40px;
-    /* background: rgb(255, 255, 255);     */
-    border-radius: 50%;
-    cursor: pointer;
-}
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    pointer-events: none;
+  }
