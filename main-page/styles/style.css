@@ -1,0 +1,196 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-color: #CFD2DB;
+}
+.shadow-container {
+    position: absolute;
+    width: 851px;
+    height: 431px;
+    left: 234px;
+    top: 138px;
+ 
+    box-shadow: 5px 33px 86px 39px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+.container {
+    position: absolute;
+    width: 1206px;
+    height: 516px;
+    left: 57px;
+    top: 53px;
+    background: url("../images/image 52.png");
+    border-radius: 36px;
+    z-index: 2;
+}
+.nav-container {
+    width: 1080px;
+    margin-left: 75px;
+    margin-top:  45px;
+}
+.nav-logo-container {
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #454545;
+}
+.down-line {
+    width: 1056px;
+    height: 2px;
+    background: #2E7272;
+    margin-top: 18px;
+}
+.nav-menu-container ul {
+    list-style-type: none;
+    padding-left: 0;    
+}
+.nav-menu-container li {
+    display: inline-block;
+    margin-right: 81px;
+}
+.nav-menu-container a {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #131313;
+    text-decoration: none;
+}
+a:active {
+    color: #000000;
+}
+a:hover {
+    color: #000000;
+}
+
+.duty-place-container {
+    margin-left: 76px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+}
+.duty-place-container div {
+    margin-left: 8px;
+    cursor: pointer;
+}
+.duty-place-container img {
+    cursor: pointer;
+}
+.news-container {   
+    margin-bottom: 49px;
+    margin-left: 76px;    
+}
+.current-time-container {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+}
+.welcome-container {
+    width: 600px;
+    height: 228px;
+    margin-top: 15px;
+    background: rgba(149, 195, 220, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+}
+.left-span {
+    width: 10px;
+    height: 100%;
+    background: #667F71;
+}
+.welcome-title-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 21px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.first-title-container {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+}
+.second-title-container {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 66px;
+    letter-spacing: 0.205em;
+    margin-bottom: 15px;
+}
+.third-title-container {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 22px;    
+}
+.music-container {
+    width: 228px;
+    height: 250px;
+    background: rgba(149, 195, 220, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 4px;
+    margin-top: 40px;    
+    margin-left: 17px;    
+}
+
+.news-main-container {
+    display: flex;
+    flex-direction: row;
+}
+.music-container {
+    display: flex;
+    flex-direction: column;
+}
+.music-player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.music-player-title {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    letter-spacing: 0.205em;
+    text-align: center;
+    color: white;
+}
+.music-player-quote {
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: center;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+.music-tracklist-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-panel {
+    width: 100%;
+    height: 10px;
+    background: #335B96; 
+    margin-top: 15px;    
+}

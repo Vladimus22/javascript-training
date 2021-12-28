@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="txt">
+        
+    </div>
+    <div class="nav-bar">
+        <button class="drop-down-menu">Виберіть мову:</button>
+        <div class="drop-down-options">
+            <a href="#">Українська</a>
+            <a href="#">English</a>
+            <a href="#">日本語</a>
+        </div>        
+    </div>
+    <!-- palette: #AC80A0, #89AAE6, #3685B5, #0471A6, #061826 -->
+    <div id='inputs'>
+        <div class="inputs-description">
+            <p id="formula">Калькулятор обчислення виразу типу: x<sub>1</sub> + x<sub>2</sub> + x<sub>3</sub> = x<sub>4</sub></p>
+        </div>
+        <div class="inputs-form">
+            <div class="inputs-form-child">
+                <input type="text" name="firstInput" placeholder="x1" id="inp_1" class="inputs-text">
+                <input type="text" name="secondInput" placeholder="x2" id="inp_2" class="inputs-text">
+                <input type="text" name="thirdInput" placeholder="x3" id="inp_3" class="inputs-text">
+            </div>
+            <div class="inputs-form-child-2">
+                <!-- button to submit calculate inputs-->
+                <button onclick="addInputs()" id="inputs-button">=</button>
+                <!-- output -->
+                <input type="text" name="" placeholder="x4" id="inp_4" class="inputs-text">
+            </div>
+        </div>
+    </div>
+    <div class="loop">
+
+        <div class="loop-block">
+            <div class="loop-textblock">
+                <div class="loop-title"><strong>The Snail in The Well</strong> <br /></div>
+                <div class="loop-textblock2">
+                    <p>The snail climbs up 7 feet each day and slips back 2 feet each night.
+                        This code counts how many days will it take the snail to get out of a well with the given depth?
+                        You only need to enter an arbitrary depth
+                    </p>
+                    <input type="text" name="depthCount" id="depthCount" placeholder="Enter depth" class="inputs-text">
+                    <button onclick="main()" id="loop-button">Calculate!</button>
+                </div>               
+                <div class="loop-resultblock">
+                    <p>The snail will be need <span id="count_days">0</span> days to get out from well</p>
+                </div>
+            </div>
+            <div class="loop-imageblock">
+                <img src="./images/snail.jpg" alt="snailonthewall" width="275">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="image-slider-container">
+        <div>
+            <button onclick="prev()"> Prev </button>
+            <img id="slider" src="./images/lynx_1.png" alt="">
+            <button onclick="next()"> Next </button>
+        </div>
+    </div>
+    <!-- <script src="./basicOperatorsMath.js"></script> -->
+    <script src="./inputs.js"></script>
+    <!-- <script src="./test.js"></script> -->
+    <!-- <script src="./operatorIf.js"></script> -->
+    <!-- <script src="./logicalOperators.js"></script> -->
+    <!-- <script src="./ifLogicalOp.js"></script> -->
+    <!-- <script src="./simpleLoginSystem.js"></script> -->
+    <!-- <script src="./loopTask.js"></script>
+    <script src="./loops.js"></script> -->
+    <!-- <script src="./switchCase.js"></script>
+    <script src="./functionsTraining.js"></script> -->
+    <script src="./findNextSquare.js"></script>
+    <script src="./objects.js"></script>
+    <script src="./imageSlider.js"></script>
+</body>
+
+</html>

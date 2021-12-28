@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-size: 48px;
+    margin: 0 0 16px 0;
+    font-weight: bold;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+h2 {    
+    font-size: 24px;
+    margin: 0 0 16px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+header{
+    display: flex;
+    align-items: center;
+    background: rgb(41, 76, 98);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+#hd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;
+    max-width: 900px; /* we limited the maximum width the text container can have to 900px using the max-width property. */
+    margin-bottom: 30px;
+}
+.btn {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background: #549DA0;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.btn:hover {
+    background: #468486;
+}
+#ft{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32%;    
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.feature img {
+    width: 40%;
+}
+.quote {
+    background: rgb(87, 157, 159);
+    padding-bottom: 20px;
+}
+blockquote {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: rgb(87, 157, 159);
+}
+blockquote p {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+blockquote cite {
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+blockquote cite:before {
+    content: '-';
+    margin-right: 5px;
+}
+footer {
+    background: #353535;
+    padding: 32px 0;
+    height: 100px;
+    text-align: center;
+    color: #868686;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer li {
+    display: inline-block;
+}
+footer li a {
+    padding: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #c3c3c3;
+}
+footer li a:hover {
+    color: white;
+}
+#ftr {
+    padding: 0 20px  0 20px;
+}
+#qt {
+    margin-bottom: 0;
+}
+/* Submenu */
+.submenu {
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    position: absolute;
+    background-color: #549DA0;
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.submenu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.submenu a:hover {
+    background-color: #468486;
+}
+@media  screen and (max-width: 480px) {
+    .btn {
+        display: block;
+        font-size: 18px;    
+    }
+    h1 {
+        font-size: 32px;
+        margin: 0 0 8px 0;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    section {
+        padding: 25px 0 15px 0;
+    }
+    .feature {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        justify-content: center;
+        text-align: left;
+        margin: 0 0 10px 0;
+        font-size: 16px;
+        text-align: center;
+    }
+    .feature img {
+        width: 15%;
+        min-width: 60px;
+        margin-right: 20px
+    }
+    .quote {
+        padding: 30px 0;
+    }
+    blockquote p {
+        font-size: 18px;
+    }
+    blockquote cite {
+        font-size: 14px;
+    }
+    footer {
+        padding: 30px 0 10px 0;
+    }
+    footer li {
+        display: block;
+        margin: 5px 0;
+    }
+    .submenu {
+        width: 100%;
+        position: relative;
+    }
+}
